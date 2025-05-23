@@ -52,6 +52,11 @@ class SiteInformation:
         self.url_username_format = url_username_format
 
         self.username_claimed = username_claimed
+        # The 'username_unclaimed' attribute is initialized by the __init__
+        # parameter, which defaults to secrets.token_urlsafe(10) if not provided.
+        # However, this value is immediately overwritten by the line below.
+        # Currently, 'data.json' does not typically provide a 'username_unclaimed'
+        # field, and this attribute is not used in the core username checking logic.
         self.username_unclaimed = secrets.token_urlsafe(32)
         self.information = information
         self.is_nsfw  = is_nsfw

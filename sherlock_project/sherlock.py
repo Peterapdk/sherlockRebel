@@ -239,10 +239,7 @@ def sherlock(
 
     # Limit number of workers to 20.
     # This is probably vastly overkill.
-    if len(site_data) >= 20:
-        max_workers = 20
-    else:
-        max_workers = len(site_data)
+    max_workers = min(len(site_data), 20)
 
     # Create multi-threaded session for all requests.
     session = SherlockFuturesSession(
@@ -368,166 +365,222 @@ def sherlock(
 
     # Open the file containing account links
     # Core logic: If tor requests, make them here. If multi-threaded requests, wait for responses
-    for social_network, net_info in site_data.items():
-        # Retrieve results again
-        results_site = results_total.get(social_network)
+    for social_network_name, site_info in site_data.items():
+        results_site = results_total.get(social_network_name)
 
-        # Retrieve other site information again
-        url = results_site.get("url_user")
-        status = results_site.get("status")
-        if status is not None:
-            # We have already determined the user doesn't exist here
+        # Skip if already processed (e.g. ILLEGAL username)
+        if results_site.get("status") is not None:
             continue
 
-        # Get the expected error type
-        error_type = net_info["errorType"]
-
-        # Retrieve future and ensure it has finished
-        future = net_info["request_future"]
-        r, error_text, exception_text = get_response(
-            request_future=future, error_type=error_type, social_network=social_network
-        )
-
-        # Get response time for response of our request.
-        try:
-            response_time = r.elapsed
-        except AttributeError:
-            response_time = None
-
-        # Attempt to get request information
-        try:
-            http_status = r.status_code
-        except Exception:
-            http_status = "?"
-        try:
-            response_text = r.text.encode(r.encoding or "UTF-8")
-        except Exception:
-            response_text = ""
-
-        query_status = QueryStatus.UNKNOWN
-        error_context = None
-
-        # As WAFs advance and evolve, they will occasionally block Sherlock and
-        # lead to false positives and negatives. Fingerprints should be added
-        # here to filter results that fail to bypass WAFs. Fingerprints should
-        # be highly targetted. Comment at the end of each fingerprint to
-        # indicate target and date fingerprinted.
-        WAFHitMsgs = [
-            r'.loading-spinner{visibility:hidden}body.no-js .challenge-running{display:none}body.dark{background-color:#222;color:#d9d9d9}body.dark a{color:#fff}body.dark a:hover{color:#ee730a;text-decoration:underline}body.dark .lds-ring div{border-color:#999 transparent transparent}body.dark .font-red{color:#b20f03}body.dark', # 2024-05-13 Cloudflare
-            r'<span id="challenge-error-text">', # 2024-11-11 Cloudflare error page
-            r'AwsWafIntegration.forceRefreshToken', # 2024-11-11 Cloudfront (AWS)
-            r'{return l.onPageView}}),Object.defineProperty(r,"perimeterxIdentifiers",{enumerable:' # 2024-04-09 PerimeterX / Human Security
-        ]
-
-        if error_text is not None:
-            error_context = error_text
-
-        elif any(hitMsg in r.text for hitMsg in WAFHitMsgs):
-            query_status = QueryStatus.WAF
-
-        elif error_type == "message":
-            # error_flag True denotes no error found in the HTML
-            # error_flag False denotes error found in the HTML
-            error_flag = True
-            errors = net_info.get("errorMsg")
-            # errors will hold the error message
-            # it can be string or list
-            # by isinstance method we can detect that
-            # and handle the case for strings as normal procedure
-            # and if its list we can iterate the errors
-            if isinstance(errors, str):
-                # Checks if the error message is in the HTML
-                # if error is present we will set flag to False
-                if errors in r.text:
-                    error_flag = False
-            else:
-                # If it's list, it will iterate all the error message
-                for error in errors:
-                    if error in r.text:
-                        error_flag = False
-                        break
-            if error_flag:
-                query_status = QueryStatus.CLAIMED
-            else:
-                query_status = QueryStatus.AVAILABLE
-        elif error_type == "status_code":
-            error_codes = net_info.get("errorCode")
-            query_status = QueryStatus.CLAIMED
-
-            # Type consistency, allowing for both singlets and lists in manifest
-            if isinstance(error_codes, int):
-                error_codes = [error_codes]
-
-            if error_codes is not None and r.status_code in error_codes:
-                query_status = QueryStatus.AVAILABLE
-            elif r.status_code >= 300 or r.status_code < 200:
-                query_status = QueryStatus.AVAILABLE
-        elif error_type == "response_url":
-            # For this detection method, we have turned off the redirect.
-            # So, there is no need to check the response URL: it will always
-            # match the request.  Instead, we will ensure that the response
-            # code indicates that the request was successful (i.e. no 404, or
-            # forward to some odd redirect).
-            if 200 <= r.status_code < 300:
-                query_status = QueryStatus.CLAIMED
-            else:
-                query_status = QueryStatus.AVAILABLE
-        else:
-            # It should be impossible to ever get here...
-            raise ValueError(
-                f"Unknown Error Type '{error_type}' for " f"site '{social_network}'"
-            )
-
-        if dump_response:
-            print("+++++++++++++++++++++")
-            print(f"TARGET NAME   : {social_network}")
-            print(f"USERNAME      : {username}")
-            print(f"TARGET URL    : {url}")
-            print(f"TEST METHOD   : {error_type}")
-            try:
-                print(f"STATUS CODES  : {net_info['errorCode']}")
-            except KeyError:
-                pass
-            print("Results...")
-            try:
-                print(f"RESPONSE CODE : {r.status_code}")
-            except Exception:
-                pass
-            try:
-                print(f"ERROR TEXT    : {net_info['errorMsg']}")
-            except KeyError:
-                pass
-            print(">>>>> BEGIN RESPONSE TEXT")
-            try:
-                print(r.text)
-            except Exception:
-                pass
-            print("<<<<< END RESPONSE TEXT")
-            print("VERDICT       : " + str(query_status))
-            print("+++++++++++++++++++++")
-
-        # Notify caller about results of query.
-        result = QueryResult(
+        _check_site(
             username=username,
-            site_name=social_network,
-            site_url_user=url,
-            status=query_status,
-            query_time=response_time,
-            context=error_context,
+            social_network_name=social_network_name,
+            site_info=site_info,
+            session_results_total=results_total,
+            query_notify=query_notify,
+            dump_response=dump_response,
+            timeout=timeout,
+            proxy=proxy
         )
-        query_notify.update(result)
-
-        # Save status of request
-        results_site["status"] = result
-
-        # Save results from request
-        results_site["http_status"] = http_status
-        results_site["response_text"] = response_text
-
-        # Add this site's results into final dictionary with all of the other results.
-        results_total[social_network] = results_site
 
     return results_total
+
+
+def _check_site(
+    username: str,
+    social_network_name: str,
+    site_info: dict,
+    session_results_total: dict,
+    query_notify: QueryNotify,
+    dump_response: bool,
+    timeout: int,
+    proxy: Optional[str],
+):
+    """
+    Checks a single social network for a username.
+
+    Args:
+        username (str): The username to check.
+        social_network_name (str): The name of the social network.
+        site_info (dict): Dictionary containing site-specific information from data.json.
+        session_results_total (dict): The main dictionary holding all site results for the session.
+                                     This function will update the entry for `social_network_name`
+                                     within this dictionary.
+        query_notify (QueryNotify): Object to notify about query results.
+        dump_response (bool): Boolean indicating whether to dump HTTP response.
+        timeout (int): Request timeout in seconds.
+        proxy (Optional[str]): Proxy URL, if any.
+
+    Note:
+        This function does not return a value; it modifies `session_results_total` in place.
+    """
+    # Retrieve the specific site's results dictionary (which was pre-populated in the sherlock function)
+    results_site = session_results_total.get(social_network_name)
+    url = results_site.get("url_user")  # The URL to check for the user.
+
+    # Get the expected error type
+    error_type = site_info["errorType"]
+
+    # Retrieve future and ensure it has finished
+    future = site_info["request_future"]
+    r, error_text, exception_text = get_response(
+        request_future=future, error_type=error_type, social_network=social_network_name
+    )
+
+    # Get response time for response of our request.
+    try:
+        response_time = r.elapsed
+    except AttributeError:
+        response_time = None
+
+    # Attempt to get request information
+    try:
+        http_status = r.status_code
+    except Exception:  # Broad exception to catch any issue if 'r' is None or lacks status_code
+        http_status = "?"
+    try:
+        # response_text is currently stored as bytes after encoding.
+        # However, r.text (string) is used for checks later.
+        # This can lead to AttributeError if 'r' is None or lacks 'text'.
+        # TODO: Refactor response text handling for robustness and type consistency (string vs bytes).
+        response_text = r.text.encode(r.encoding or "UTF-8")
+    except Exception:  # Broad exception if 'r' is None, lacks 'text', or encoding fails.
+        response_text = b"" # Should be bytes if the try block succeeds with bytes
+
+    query_status = QueryStatus.UNKNOWN  # Default assumption
+    error_context = None  # Used to store context from get_response if an error occurred there
+
+    # As WAFs advance and evolve, they will occasionally block Sherlock and
+    # lead to false positives and negatives. Fingerprints should be added
+    # here to filter results that fail to bypass WAFs. Fingerprints should
+    # be highly targetted. Comment at the end of each fingerprint to
+    # indicate target and date fingerprinted.
+    WAFHitMsgs = [
+        r'.loading-spinner{visibility:hidden}body.no-js .challenge-running{display:none}body.dark{background-color:#222;color:#d9d9d9}body.dark a{color:#fff}body.dark a:hover{color:#ee730a;text-decoration:underline}body.dark .lds-ring div{border-color:#999 transparent transparent}body.dark .font-red{color:#b20f03}body.dark', # 2024-05-13 Cloudflare
+        r'<span id="challenge-error-text">', # 2024-11-11 Cloudflare error page
+        r'AwsWafIntegration.forceRefreshToken', # 2024-11-11 Cloudfront (AWS)
+        r'{return l.onPageView}}),Object.defineProperty(r,"perimeterxIdentifiers",{enumerable:' # 2024-04-09 PerimeterX / Human Security
+    ]
+
+    if error_text is not None:
+        # This means get_response() caught an exception during the request (e.g., connection error, timeout).
+        error_context = error_text
+        # query_status remains UNKNOWN or could be set to a specific error status if desired.
+    elif r is None:
+        # If 'r' is None and error_text is also None, implies a non-exception issue in get_response or future.result().
+        # This case should ideally be handled more explicitly if possible.
+        # For now, query_status remains UNKNOWN.
+        error_context = "Response object is None, unknown error" # Provide some context
+    elif any(hitMsg in r.text for hitMsg in WAFHitMsgs): # r.text might fail if r is None (handled by elif r is None)
+        # Site is protected by a WAF, content is likely a challenge page.
+        query_status = QueryStatus.WAF
+    elif error_type == "message":
+        # Detection is based on finding (or not finding) a specific message string in the response body.
+        # error_flag = True means username is CLAIMED (error message indicating unavailability NOT found).
+        # error_flag = False means username is AVAILABLE (error message indicating unavailability IS found).
+        error_flag = True  # Assume username is claimed unless an error message is found.
+        errors = site_info.get("errorMsg") # String or list of strings.
+
+        # Ensure r.text is available for checking.
+        response_body_text = r.text if r and hasattr(r, 'text') else ""
+
+        if isinstance(errors, str):
+            if errors in response_body_text:
+                error_flag = False # Error message found, so username is available.
+        else: # errors is a list of messages
+            for error_message_variant in errors:
+                if error_message_variant in response_body_text:
+                    error_flag = False # One of the error messages found.
+                    break
+        if error_flag:
+            query_status = QueryStatus.CLAIMED
+        else:
+            query_status = QueryStatus.AVAILABLE
+    elif error_type == "status_code":
+        # Detection is based on the HTTP status code of the response.
+        # Default assumption is CLAIMED if no specific error code matches.
+        query_status = QueryStatus.CLAIMED
+        error_codes = site_info.get("errorCode") # Can be a single int or list of ints.
+
+        # Ensure errorCode is a list for uniform processing.
+        if isinstance(error_codes, int):
+            error_codes = [error_codes]
+
+        if error_codes is not None and r.status_code in error_codes:
+            # If the response status code matches one of the defined 'errorCode's for the site (e.g., 404),
+            # it means the username is AVAILABLE.
+            query_status = QueryStatus.AVAILABLE
+        elif r.status_code >= 300 or r.status_code < 200:
+            # Any non-2xx status code, if not in specific errorCodes,
+            # might also indicate UNAVAILABLE or an issue.
+            # For Sherlock's purpose, this often means AVAILABLE or error.
+            # This is a broad catch-all; specific site error codes are preferred.
+            query_status = QueryStatus.AVAILABLE # Or potentially UNKNOWN/ERROR depending on interpretation.
+                                                # Current logic treats it as AVAILABLE.
+    elif error_type == "response_url":
+        # Detection is based on the final URL after potential redirects (though redirects are usually disabled for this).
+        # If redirects are off, we check if the request to the original URL was successful.
+        # A 2xx status on the user's profile URL (without redirects) typically means it's CLAIMED.
+        if 200 <= r.status_code < 300:
+            query_status = QueryStatus.CLAIMED
+        else:
+            # Any other status (e.g., 404) means AVAILABLE.
+            query_status = QueryStatus.AVAILABLE
+    else:
+        # Should not happen if data.json is correctly configured.
+        raise ValueError(
+            f"Unknown Error Type '{error_type}' for site '{social_network_name}'"
+        )
+
+    if dump_response:
+        print("+++++++++++++++++++++")
+        print(f"TARGET NAME   : {social_network_name}")
+        print(f"USERNAME      : {username}")
+        print(f"TARGET URL    : {url}")
+        print(f"TEST METHOD   : {error_type}")
+        try:
+            print(f"STATUS CODES  : {site_info['errorCode']}")
+        except KeyError:
+            pass
+        print("Results...")
+        try:
+            print(f"RESPONSE CODE : {r.status_code}")
+        except Exception:
+            pass
+        try:
+            print(f"ERROR TEXT    : {site_info['errorMsg']}")
+        except KeyError:
+            pass
+        print(">>>>> BEGIN RESPONSE TEXT")
+        try:
+            print(r.text)
+        except Exception:
+            pass
+        print("<<<<< END RESPONSE TEXT")
+        print("VERDICT       : " + str(query_status))
+        print("+++++++++++++++++++++")
+
+    # Notify caller about results of query.
+    result = QueryResult(
+        username=username,
+        site_name=social_network_name,
+        site_url_user=url,
+        status=query_status,
+        query_time=response_time,
+        context=error_context,
+    )
+    query_notify.update(result)
+
+    # Save status of request
+    results_site["status"] = result
+
+    # Save results from request
+    results_site["http_status"] = http_status
+    results_site["response_text"] = response_text
+
+    # Add this site's results into final dictionary with all of the other results.
+    # This modifies the dictionary in place.
+    session_results_total[social_network_name] = results_site
 
 
 def timeout_check(value):
@@ -754,7 +807,7 @@ def main():
 
     # Make prompts
     if args.proxy is not None:
-        print("Using the proxy: " + args.proxy)
+        print(f"Using the proxy: {args.proxy}")
 
     if args.tor or args.unique_tor:
         print("Using Tor to make requests")
@@ -847,12 +900,11 @@ def main():
 
     # Run report on all specified users.
     all_usernames = []
-    for username in args.username:
-        if check_for_parameter(username):
-            for name in multiple_usernames(username):
-                all_usernames.append(name)
+    for username_arg in args.username:
+        if check_for_parameter(username_arg):
+            all_usernames.extend(multiple_usernames(username_arg))
         else:
-            all_usernames.append(username)
+            all_usernames.append(username_arg)
     for username in all_usernames:
         results = sherlock(
             username,
@@ -929,45 +981,45 @@ def main():
                         ]
                     )
         if args.xlsx:
-            usernames = []
-            names = []
-            url_main = []
-            url_user = []
-            exists = []
-            http_status = []
-            response_time_s = []
+            xlsx_rows = []
+            ordered_columns = [
+                "username",
+                "name",
+                "url_main",
+                "url_user",
+                "exists",
+                "http_status",
+                "response_time_s",
+            ]
 
-            for site in results:
+            for site_name, site_results in results.items():
                 if (
                     args.print_found
                     and not args.print_all
-                    and results[site]["status"].status != QueryStatus.CLAIMED
+                    and site_results["status"].status != QueryStatus.CLAIMED
                 ):
                     continue
 
-                if response_time_s is None:
-                    response_time_s.append("")
-                else:
-                    response_time_s.append(results[site]["status"].query_time)
-                usernames.append(username)
-                names.append(site)
-                url_main.append(results[site]["url_main"])
-                url_user.append(results[site]["url_user"])
-                exists.append(str(results[site]["status"].status))
-                http_status.append(results[site]["http_status"])
+                current_response_time_s = site_results["status"].query_time
+                if current_response_time_s is None:
+                    current_response_time_s = ""
 
-            DataFrame = pd.DataFrame(
-                {
-                    "username": usernames,
-                    "name": names,
-                    "url_main": url_main,
-                    "url_user": url_user,
-                    "exists": exists,
-                    "http_status": http_status,
-                    "response_time_s": response_time_s,
+                row = {
+                    "username": username,
+                    "name": site_name,
+                    "url_main": site_results["url_main"],
+                    "url_user": site_results["url_user"],
+                    "exists": str(site_results["status"].status),
+                    "http_status": site_results["http_status"],
+                    "response_time_s": current_response_time_s,
                 }
-            )
-            DataFrame.to_excel(f"{username}.xlsx", sheet_name="sheet1", index=False)
+                xlsx_rows.append(row)
+
+            if xlsx_rows:  # Ensure there's data to write
+                DataFrame = pd.DataFrame(xlsx_rows)
+                # Reorder columns to match original output
+                DataFrame = DataFrame[ordered_columns]
+                DataFrame.to_excel(f"{username}.xlsx", sheet_name="sheet1", index=False)
 
         print()
     query_notify.finish()
