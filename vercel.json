@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "sherlock_project/web.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "sherlock_project/web.py"
+        }
+    ]
+}

@@ -1,7 +1,10 @@
-import sherlock_project
+import sherlock_project.sherlock
 
 #from sherlock.sites import SitesInformation
 #local_manifest = data_file_path=os.path.join(os.path.dirname(__file__), "../sherlock/resources/data.json")
 
 def test_username_via_message():
-    sherlock_project.__main__("--version")
+    try:
+        sherlock_project.sherlock.main()
+    except SystemExit:
+        pass

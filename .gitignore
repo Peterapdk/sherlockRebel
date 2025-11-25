@@ -45,3 +45,9 @@ tests/.excluded_sites
 
 # Vim swap files
 *.swp
+
+# Vercel
+.vercel
+
+# Logs
+uvicorn.log

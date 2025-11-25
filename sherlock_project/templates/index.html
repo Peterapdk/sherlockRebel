@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlock</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sherlock</h1>
+        <p>Find usernames across social networks</p>
+        <form action="/" method="post">
+            <input type="text" name="username" placeholder="Enter username" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="results">
+            {% if results %}
+                <h2>Results for {{ username }}</h2>
+                <ul>
+                    {% for result in results %}
+                        <li>
+                            <a href="{{ result.url_user }}" target="_blank">
+                                <img src="/static/icon.png" alt="icon" class="icon">
+                                {{ result.site_name }}: {{ result.url_user }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
