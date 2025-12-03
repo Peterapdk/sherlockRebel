@@ -1,11 +1,11 @@
 APClips
 Archive.org
+DeviantArt
 GNOME VCS
 GeeksforGeeks
 Giphy
+Hubski
 LushStories
-Minecraft
-OurDJTalk
 PocketStars
 Reddit
 RocketTube
@@ -13,6 +13,5 @@ Splice
 Spotify
 Weblate
 YandexMusic
-hunting
 opennet
 svidbook
