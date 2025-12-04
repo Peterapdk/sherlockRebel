@@ -1,9 +1,10 @@
 APClips
 Archive.org
-DeviantArt
+Code Snippet Wiki
 GNOME VCS
 GeeksforGeeks
 Giphy
+HackerRank
 Hubski
 LushStories
 PocketStars
@@ -13,5 +14,4 @@ Splice
 Spotify
 Weblate
 YandexMusic
-opennet
 svidbook
