@@ -7,6 +7,7 @@ Fandom
 GNOME VCS
 GeeksforGeeks
 Giphy
+GitHub
 Hubski
 LushStories
 PocketStars
@@ -20,4 +21,3 @@ Weblate
 YandexMusic
 opennet
 svidbook
-xHamster
