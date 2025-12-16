@@ -10,13 +10,14 @@ Giphy
 GitHub
 Hubski
 LushStories
+Minecraft
 PocketStars
 Reddit
 RocketTube
+SlideShare
 Splice
 Spotify
 Trovo
-Vero
 Weblate
 YandexMusic
 opennet
