@@ -7,7 +7,6 @@ Fandom
 GNOME VCS
 GeeksforGeeks
 Giphy
-GitHub
 Hubski
 LushStories
 Minecraft
