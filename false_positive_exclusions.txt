@@ -8,8 +8,8 @@ GNOME VCS
 GeeksforGeeks
 Giphy
 Hubski
+LiveJournal
 LushStories
-Minecraft
 PocketStars
 Reddit
 RocketTube
