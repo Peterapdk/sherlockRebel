@@ -1,24 +1,23 @@
 APClips
-Archive.org
-Audiojungle
 Code Snippet Wiki
 DeviantArt
 Fandom
 GNOME VCS
 GeeksforGeeks
 Giphy
-GitHub
 Hubski
+LushStories
+Minecraft
 PocketStars
 Reddit
 RocketTube
 Scribd
 SlideShare
-SpeakerDeck
 Splice
 Spotify
 Trovo
 Weblate
 YandexMusic
+opennet
 phpRU
 svidbook
