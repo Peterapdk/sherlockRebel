@@ -1,8 +1,8 @@
 APClips
+Archive.org
 Code Snippet Wiki
 DeviantArt
 Fandom
-GNOME VCS
 GeeksforGeeks
 Giphy
 Hubski
@@ -21,3 +21,5 @@ YandexMusic
 opennet
 phpRU
 svidbook
+threads
+xHamster
