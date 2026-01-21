@@ -1,5 +1,6 @@
 APClips
 Archive.org
+Audiojungle
 Code Snippet Wiki
 Fandom
 GNOME VCS
@@ -18,7 +19,6 @@ Smule
 Splice
 Spotify
 Weblate
-YandexMusic
 mercadolivre
 opennet
 phpRU
