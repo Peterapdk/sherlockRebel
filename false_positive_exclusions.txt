@@ -1,13 +1,13 @@
 APClips
 Archive.org
 Code Snippet Wiki
+Cults3D
 DeviantArt
 Fandom
 GNOME VCS
 GeeksforGeeks
 Giphy
 Hubski
-Itch.io
 LushStories
 Minecraft
 PocketStars
@@ -21,7 +21,9 @@ Splice
 Spotify
 Trovo
 Weblate
+YandexMusic
 mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
