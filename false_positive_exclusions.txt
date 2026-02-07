@@ -1,9 +1,7 @@
 APClips
 Archive.org
-Audiojungle
+CGTrader
 Code Snippet Wiki
-DeviantArt
-Eintracht Frankfurt Forum
 Fandom
 GNOME VCS
 GeeksforGeeks
@@ -15,11 +13,11 @@ Realmeye
 Reddit
 RocketTube
 Scribd
+Slack
 SlideShare
 Smule
 Splice
 Spotify
-Trovo
 TryHackMe
 Weblate
 YandexMusic
@@ -27,4 +25,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
