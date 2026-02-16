@@ -1,11 +1,11 @@
 APClips
 Archive.org
 Code Snippet Wiki
-Cracked Forum
 Fandom
 GNOME VCS
 GeeksforGeeks
 Giphy
+Gravatar
 Hubski
 LushStories
 PocketStars
@@ -24,4 +24,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
