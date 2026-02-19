@@ -1,7 +1,6 @@
 APClips
 Archive.org
-Code Snippet Wiki
-DeviantArt
+Dribbble
 GNOME VCS
 GeeksforGeeks
 Giphy
@@ -17,7 +16,6 @@ SlideShare
 Smule
 Splice
 Spotify
-Trovo
 TryHackMe
 Weblate
 YandexMusic
@@ -25,3 +23,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
