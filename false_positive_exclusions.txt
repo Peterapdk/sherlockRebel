@@ -4,11 +4,11 @@ Code Snippet Wiki
 GNOME VCS
 GeeksforGeeks
 Giphy
-Gumroad
 Hashnode
 Hubski
 LessWrong
 LushStories
+Patched
 PocketStars
 Realmeye
 Reddit
@@ -18,11 +18,11 @@ SlideShare
 Smule
 Splice
 Spotify
-Tiendanube
+Tenor
 TryHackMe
 Weblate
 YandexMusic
 mercadolivre
+opennet
 phpRU
 svidbook
-xHamster
