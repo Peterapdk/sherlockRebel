@@ -7,7 +7,6 @@ Giphy
 Hashnode
 Hubski
 LessWrong
-LushStories
 Patched
 PocketStars
 Realmeye
@@ -18,7 +17,6 @@ SlideShare
 Smule
 Splice
 Spotify
-Tenor
 TryHackMe
 Weblate
 YandexMusic
@@ -26,3 +24,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
