@@ -1,7 +1,8 @@
 APClips
 Archive.org
-Code Snippet Wiki
+Carbonmade
 DeviantArt
+Dribbble
 GNOME VCS
 GeeksforGeeks
 Giphy
@@ -24,6 +25,7 @@ TryHackMe
 Weblate
 YandexMusic
 mercadolivre
+nnRU
 opennet
 phpRU
 svidbook
