@@ -1,8 +1,7 @@
 APClips
 Archive.org
-Carbonmade
 DeviantArt
-Dribbble
+Eintracht Frankfurt Forum
 GNOME VCS
 GeeksforGeeks
 Giphy
@@ -25,7 +24,7 @@ TryHackMe
 Weblate
 YandexMusic
 mercadolivre
-nnRU
 opennet
 phpRU
 svidbook
+xHamster
