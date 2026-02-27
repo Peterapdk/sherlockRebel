@@ -1,7 +1,6 @@
 APClips
 Archive.org
-DeviantArt
-Eintracht Frankfurt Forum
+Carbonmade
 GNOME VCS
 GeeksforGeeks
 Giphy
@@ -19,7 +18,6 @@ SlideShare
 Smule
 Splice
 Spotify
-Trovo
 TryHackMe
 Weblate
 YandexMusic
@@ -27,4 +25,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
