@@ -1,7 +1,8 @@
 APClips
 Archive.org
+Codolio
+DeviantArt
 GNOME VCS
-GaiaOnline
 GeeksforGeeks
 Giphy
 Hashnode
@@ -18,6 +19,7 @@ SlideShare
 Smule
 Splice
 Spotify
+Trovo
 TryHackMe
 Weblate
 YandexMusic
