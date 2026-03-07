@@ -24,9 +24,7 @@ Strava
 Trovo
 TryHackMe
 Weblate
-YandexMusic
 mercadolivre
-minds
 opennet
 phpRU
 svidbook
