@@ -1,7 +1,6 @@
 APClips
 Archive.org
 Codolio
-Cults3D
 DeviantArt
 GNOME VCS
 GeeksforGeeks
@@ -16,11 +15,9 @@ Rarible
 Realmeye
 Reddit
 RocketTube
-RuneScape
 Scribd
 SlideShare
 Smule
-SoylentNews
 Splice
 Spotify
 Strava
