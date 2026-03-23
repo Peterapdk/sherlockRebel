@@ -1,6 +1,7 @@
 APClips
 Archive.org
 Codolio
+DeviantArt
 GeeksforGeeks
 Giphy
 Hashnode
@@ -14,17 +15,15 @@ Rarible
 Realmeye
 Reddit
 RocketTube
-RuneScape
 Scribd
-Slack
 SlideShare
 Smule
 Splice
 Spotify
+Trovo
 TryHackMe
 Weblate
 YandexMusic
-eintracht
 mercadolivre
 minds
 opennet
