@@ -1,11 +1,12 @@
 APClips
 Archive.org
 Codolio
-DeviantArt
+DigitalSpy
 GeeksforGeeks
 Giphy
 Hashnode
 Hubski
+LessWrong
 LushStories
 Minecraft
 Patched
@@ -17,10 +18,8 @@ RocketTube
 Scribd
 SlideShare
 Smule
-SpeakerDeck
 Splice
 Spotify
-Trovo
 TryHackMe
 Weblate
 YandexMusic
