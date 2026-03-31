@@ -1,9 +1,9 @@
+7Cups
 APClips
 Archive.org
 Codolio
 DeviantArt
-DigitalSpy
-Dribbble
+Discord.bio
 GeeksforGeeks
 Giphy
 Hashnode
@@ -31,3 +31,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
