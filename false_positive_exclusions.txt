@@ -3,16 +3,18 @@ APClips
 Archive.org
 Codolio
 Discord.bio
+Eintracht Frankfurt Forum
 GeeksforGeeks
 Giphy
 Hashnode
 Hubski
 Itch.io
 LessWrong
+LiveJournal
 LushStories
+Minecraft
 Patched
 PocketStars
-Pornhub
 Rarible
 Realmeye
 Reddit
@@ -30,4 +32,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
