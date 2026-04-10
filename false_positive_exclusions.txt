@@ -2,19 +2,20 @@
 APClips
 Archive.org
 Bandcamp
+Carbonmade
 Codolio
 DeviantArt
 Discord.bio
-Eintracht Frankfurt Forum
 GeeksforGeeks
 Giphy
 Hashnode
 Hubski
 LessWrong
+LushStories
 Minecraft
 Patched
 PocketStars
-Rajce.net
+Pornhub
 Rarible
 Realmeye
 Reddit
@@ -26,6 +27,7 @@ Splice
 Spotify
 Trovo
 TryHackMe
+Velomania
 Weblate
 YandexMusic
 interpals
@@ -33,3 +35,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
