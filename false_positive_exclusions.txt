@@ -1,5 +1,6 @@
 7Cups
 APClips
+Apple Discussions
 Archive.org
 Bandcamp
 Codolio
@@ -7,13 +8,10 @@ DeviantArt
 Discord.bio
 GeeksforGeeks
 Giphy
-Gravatar
 Hashnode
 Hubski
-Itch.io
 LessWrong
 LushStories
-Minecraft
 Patched
 PocketStars
 Pornhub
@@ -22,12 +20,14 @@ Realmeye
 Reddit
 RocketTube
 Scribd
+Slack
 SlideShare
 Smule
 Splice
 Spotify
 Trovo
 TryHackMe
+Velomania
 Weblate
 YandexMusic
 interpals
