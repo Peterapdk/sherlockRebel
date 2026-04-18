@@ -3,7 +3,6 @@ APClips
 Apple Discussions
 Archive.org
 Bandcamp
-CGTrader
 Codolio
 Discord.bio
 GeeksforGeeks
@@ -11,9 +10,10 @@ Giphy
 Hashnode
 Hubski
 LessWrong
-Minecraft
+LushStories
 Patched
 PocketStars
+Pornhub
 Rarible
 Realmeye
 Reddit
@@ -30,7 +30,7 @@ YandexMusic
 dailykos
 interpals
 mercadolivre
-minds
 opennet
 phpRU
 svidbook
+xHamster
