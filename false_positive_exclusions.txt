@@ -3,6 +3,7 @@ APClips
 Apple Discussions
 Archive.org
 Bandcamp
+Chess
 Codolio
 Discord.bio
 GeeksforGeeks
@@ -33,4 +34,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
