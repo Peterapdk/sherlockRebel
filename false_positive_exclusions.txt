@@ -10,10 +10,10 @@ GeeksforGeeks
 Giphy
 Hashnode
 Hubski
+LessWrong
 LushStories
 Minecraft
 Patched
-Pornhub
 Rarible
 Realmeye
 Reddit
@@ -32,5 +32,4 @@ interpals
 mercadolivre
 opennet
 phpRU
-programming.dev
 svidbook
