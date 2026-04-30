@@ -3,16 +3,19 @@ APClips
 Airliners
 Apple Discussions
 Archive.org
+ArtStation
 Bandcamp
-CGTrader
 Codolio
 Discord.bio
+Dribbble
+Envato Forum
 GeeksforGeeks
 Giphy
 Hashnode
 Hubski
 LessWrong
 LushStories
+Minecraft
 Patched
 Pornhub
 Rarible
@@ -22,16 +25,16 @@ RocketTube
 Scribd
 SlideShare
 Smule
-SpeakerDeck
 Splice
 Spotify
 TryHackMe
+Velomania
 Weblate
 YandexMusic
 dailykos
 interpals
 mercadolivre
-nnRU
 opennet
 phpRU
 svidbook
+xHamster
