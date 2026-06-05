@@ -5,7 +5,6 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-CGTrader
 Codolio
 DeviantArt
 Discord.bio
@@ -14,10 +13,10 @@ GeeksforGeeks
 Giphy
 Hashnode
 Hubski
-Itch.io
 LushStories
+OurDJTalk
 Patched
-Rajce.net
+Pornhub
 Rarible
 Realmeye
 Reddit
@@ -40,3 +39,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
