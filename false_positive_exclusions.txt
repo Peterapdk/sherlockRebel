@@ -7,12 +7,10 @@ Archive.org
 ArtStation
 Bandcamp
 Codolio
-DeviantArt
 Discord.bio
 Envato Forum
 GeeksforGeeks
 Giphy
-GitHub
 Hashnode
 Hubski
 LessWrong
@@ -28,7 +26,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trovo
 TryHackMe
 Velomania
 Weblate
@@ -41,4 +38,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
