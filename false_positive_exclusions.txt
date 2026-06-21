@@ -16,8 +16,8 @@ Hubski
 Itch.io
 LessWrong
 LushStories
+Minecraft
 Odysee
-OurDJTalk
 Patched
 Rarible
 Realmeye
@@ -28,7 +28,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Star Citizen
 Trovo
 TryHackMe
 Velomania
