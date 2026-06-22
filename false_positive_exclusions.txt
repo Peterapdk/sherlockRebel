@@ -5,6 +5,7 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
+CGTrader
 Codolio
 DeviantArt
 Discord.bio
@@ -15,7 +16,6 @@ Hashnode
 Hubski
 Itch.io
 LessWrong
-LushStories
 Minecraft
 Odysee
 Patched
@@ -24,6 +24,7 @@ Realmeye
 Reddit
 Replit.com
 RocketTube
+RuneScape
 Scribd
 SlideShare
 Splice
@@ -35,6 +36,7 @@ Weblate
 YandexMusic
 authorSTREAM
 dailykos
+furaffinity
 igromania
 interpals
 mercadolivre
