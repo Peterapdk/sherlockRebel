@@ -6,17 +6,21 @@ Archive.org
 ArtStation
 Bandcamp
 Codolio
-DeviantArt
+Cults3D
 Discord.bio
 Envato Forum
 GeeksforGeeks
 Giphy
+Gumroad
+HackerRank
 Hashnode
 Houzz
 Hubski
 LessWrong
 LushStories
+Minecraft
 Odysee
+Patched
 Rarible
 Realmeye
 Reddit
@@ -26,7 +30,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trovo
 TryHackMe
 Velomania
 Weblate
