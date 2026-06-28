@@ -6,13 +6,11 @@ Archive.org
 ArtStation
 Bandcamp
 Codolio
-Cults3D
+DeviantArt
 Discord.bio
 Envato Forum
 GeeksforGeeks
 Giphy
-Gumroad
-HackerRank
 Hashnode
 Houzz
 Hubski
@@ -30,6 +28,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trovo
 TryHackMe
 Velomania
 Weblate
