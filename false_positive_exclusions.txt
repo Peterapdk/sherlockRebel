@@ -1,5 +1,4 @@
 7Cups
-APClips
 Airliners
 Apple Developer
 Apple Discussions
@@ -7,6 +6,7 @@ Archive.org
 ArtStation
 Bandcamp
 Codolio
+Cults3D
 DeviantArt
 Discord.bio
 Envato Forum
@@ -19,8 +19,8 @@ LessWrong
 LushStories
 Minecraft
 Odysee
+PCGamer
 Patched
-Pornhub
 Rarible
 Realmeye
 Reddit
