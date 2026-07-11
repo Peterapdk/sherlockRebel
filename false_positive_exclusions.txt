@@ -5,19 +5,22 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
+Blogger
 BreachSta.rs Forum
 Codolio
 DeviantArt
 Discord.bio
+Dribbble
 Envato Forum
 GeeksforGeeks
 Giphy
+Gravatar
 Hashnode
 Houzz
 Hubski
-Itch.io
 LessWrong
 LushStories
+Minecraft
 Odysee
 PCGamer
 Pornhub
@@ -26,6 +29,7 @@ Realmeye
 Reddit
 Replit.com
 RocketTube
+RuneScape
 Scribd
 SlideShare
 Splice
