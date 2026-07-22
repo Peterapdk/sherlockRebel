@@ -14,8 +14,7 @@ Giphy
 Hashnode
 Hubski
 LessWrong
-LushStories
-Minecraft
+LinkedIn
 Odysee
 PCGamer
 Patched
