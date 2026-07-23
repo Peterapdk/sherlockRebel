@@ -16,8 +16,8 @@ Hubski
 LessWrong
 LinkedIn
 Odysee
+OurDJTalk
 PCGamer
-Patched
 Rarible
 Realmeye
 Reddit
@@ -29,7 +29,6 @@ Splice
 Spotify
 Trovo
 TryHackMe
-Velomania
 Weblate
 YandexMusic
 authorSTREAM
