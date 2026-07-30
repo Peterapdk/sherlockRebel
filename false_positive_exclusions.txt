@@ -16,7 +16,6 @@ Giphy
 Hashnode
 Hubski
 Instapaper
-Itch.io
 LessWrong
 LinkedIn
 LushStories
@@ -32,6 +31,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Strava
 Trovo
 TryHackMe
 Velomania
