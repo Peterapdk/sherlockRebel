@@ -1,5 +1,4 @@
 7Cups
-APClips
 Airliners
 Apple Developer
 Apple Discussions
@@ -10,6 +9,7 @@ Chatujme.cz
 Codolio
 DeviantArt
 Discord.bio
+Dribbble
 Envato Forum
 F3.cool
 GeeksforGeeks
@@ -20,7 +20,6 @@ Hubski
 Instapaper
 LessWrong
 LinkedIn
-LushStories
 Odysee
 OurDJTalk
 PCGamer
@@ -35,8 +34,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Strava
-Trakt
 Trovo
 TryHackMe
 Velomania
@@ -50,4 +47,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
