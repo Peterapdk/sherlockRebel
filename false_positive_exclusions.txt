@@ -5,8 +5,10 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
+Blogger
 Chatujme.cz
 Codolio
+Cracked Forum
 DeviantArt
 Discord.bio
 Envato Forum
@@ -20,6 +22,7 @@ Instapaper
 LinkedIn
 LushStories
 Odysee
+OurDJTalk
 PCGamer
 Patched
 Rarible
@@ -32,6 +35,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 Trovo
 TryHackMe
 Velomania
@@ -39,6 +43,7 @@ Weblate
 YandexMusic
 authorSTREAM
 dailykos
+hunting
 igromania
 interpals
 mercadolivre
