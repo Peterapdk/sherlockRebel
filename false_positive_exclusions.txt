@@ -6,9 +6,9 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
+Carbonmade
 Chatujme.cz
 Codolio
-Cracked Forum
 DeviantArt
 Discord.bio
 Envato Forum
@@ -22,6 +22,7 @@ Hubski
 Instapaper
 LinkedIn
 LushStories
+Minecraft
 Odysee
 PCGamer
 Patched
@@ -36,6 +37,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 Trovo
 TryHackMe
 Weblate
@@ -49,4 +51,3 @@ mercadolivre
 opennet
 phpRU
 svidbook
-xHamster
