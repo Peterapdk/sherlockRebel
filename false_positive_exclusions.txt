@@ -5,10 +5,12 @@ Apple Developer
 Apple Discussions
 Archive.org
 ArtStation
+BabyRu
 Bandcamp
-Carbonmade
+Blogger
 Chatujme.cz
 Codolio
+Cults3D
 DeviantArt
 Discord.bio
 Envato Forum
@@ -22,11 +24,10 @@ Hubski
 Instapaper
 LinkedIn
 LushStories
-Minecraft
 Odysee
+Outgress
 PCGamer
 Patched
-Pornhub
 Rarible
 Realmeye
 Reddit
@@ -37,15 +38,14 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trakt
 Trovo
 TryHackMe
 Weblate
+WordPress
 YandexMusic
 authorSTREAM
 dailykos
 hunting
-igromania
 interpals
 mercadolivre
 opennet
