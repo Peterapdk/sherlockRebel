@@ -5,19 +5,16 @@ Apple Developer
 Apple Discussions
 Archive.org
 ArtStation
-BabyRu
 Bandcamp
 Blogger
 Chatujme.cz
 Codolio
-Cults3D
 DeviantArt
 Discord.bio
 Envato Forum
 F3.cool
 GeeksforGeeks
 Giphy
-HackenProof (Hackers)
 Hashnode
 Houzz
 Hubski
@@ -25,9 +22,9 @@ Instapaper
 LinkedIn
 LushStories
 Odysee
-Outgress
 PCGamer
 Patched
+Pornhub
 Rarible
 Realmeye
 Reddit
@@ -38,16 +35,21 @@ Scribd
 SlideShare
 Splice
 Spotify
+Star Citizen
+Trakt
 Trovo
 TryHackMe
+Velomania
 Weblate
-WordPress
 YandexMusic
 authorSTREAM
 dailykos
+fixya
 hunting
+igromania
 interpals
 mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
