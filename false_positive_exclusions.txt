@@ -6,8 +6,11 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
+Blogger
 Chatujme.cz
+Chess
 Codolio
+Cracked Forum
 DeviantArt
 Discord.bio
 Envato Forum
@@ -29,7 +32,6 @@ Realmeye
 Reddit
 Replit.com
 ReverbNation
-RocketTube
 Scribd
 SlideShare
 Splice
@@ -41,7 +43,6 @@ Weblate
 YandexMusic
 authorSTREAM
 dailykos
-eintracht
 fixya
 hunting
 igromania
@@ -50,3 +51,4 @@ mercadolivre
 opennet
 phpRU
 svidbook
+xHamster
