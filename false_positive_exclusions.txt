@@ -5,21 +5,21 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-Carbonmade
 Chatujme.cz
 Codolio
 DeviantArt
 Discord.bio
+Dribbble
 Envato Forum
 F3.cool
 GeeksforGeeks
 Giphy
+GitHub
 Hashnode
 Houzz
 Hubski
 Instapaper
 LinkedIn
-LushStories
 Odysee
 PCGamer
 Rarible
@@ -32,7 +32,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-TikTok
 Trakt
 Trovo
 TryHackMe
@@ -46,6 +45,7 @@ hunting
 igromania
 interpals
 mercadolivre
+nnRU
 opennet
 phpRU
 svidbook
