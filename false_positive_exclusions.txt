@@ -9,7 +9,6 @@ Chatujme.cz
 Codolio
 DeviantArt
 Discord.bio
-Dribbble
 Envato Forum
 F3.cool
 GeeksforGeeks
@@ -20,6 +19,7 @@ Houzz
 Hubski
 Instapaper
 LinkedIn
+Minecraft
 Odysee
 PCGamer
 Rarible
@@ -32,7 +32,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trakt
 Trovo
 TryHackMe
 Velomania
@@ -45,7 +44,6 @@ hunting
 igromania
 interpals
 mercadolivre
-nnRU
 opennet
 phpRU
 svidbook
