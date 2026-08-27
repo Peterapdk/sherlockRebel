@@ -5,7 +5,8 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-Blogger
+CGTrader
+Championat
 Chatujme.cz
 Codolio
 DeviantArt
@@ -14,7 +15,6 @@ Envato Forum
 F3.cool
 GeeksforGeeks
 Giphy
-HackenProof (Hackers)
 Hashnode
 Houzz
 Hubski
@@ -24,7 +24,6 @@ LushStories
 Minecraft
 Odysee
 PCGamer
-Pornhub
 Rarible
 Realmeye
 Reddit
