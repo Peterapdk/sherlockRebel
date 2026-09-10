@@ -8,15 +8,11 @@ Bandcamp
 Championat
 Chatujme.cz
 Codolio
-Cracked Forum
-DEV Community
 DeviantArt
 Discord.bio
 Envato Forum
 GeeksforGeeks
 Giphy
-GitHub
-Gumroad
 Hashnode
 Houzz
 Hubski
@@ -25,7 +21,6 @@ LinkedIn
 LushStories
 ObservableHQ
 Odysee
-OurDJTalk
 PCGamer
 Rarible
 Realmeye
