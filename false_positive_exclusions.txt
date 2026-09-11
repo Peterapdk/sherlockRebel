@@ -8,6 +8,7 @@ Bandcamp
 Championat
 Chatujme.cz
 Codolio
+ColourLovers
 DeviantArt
 Discord.bio
 Envato Forum
@@ -30,7 +31,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trakt
 Trovo
 TryHackMe
 Velomania
