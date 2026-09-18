@@ -20,9 +20,10 @@ Hashnode
 Houzz
 Hubski
 Instapaper
+Itch.io
 LinkedIn
+LiveJournal
 LushStories
-Minecraft
 ObservableHQ
 Odysee
 PCGamer
@@ -36,7 +37,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Trakt
 Trovo
 TryHackMe
 Velomania
