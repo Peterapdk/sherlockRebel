@@ -8,7 +8,6 @@ ArtStation
 Bandcamp
 CGTrader
 Championat
-Chatujme.cz
 ChaturBate
 Codolio
 DeviantArt
@@ -17,10 +16,12 @@ Envato Forum
 GeeksforGeeks
 Giphy
 Hashnode
+Heavy-R
 Houzz
 Hubski
 Instapaper
 LinkedIn
+LiveJournal
 LushStories
 ObservableHQ
 Odysee
@@ -31,7 +32,6 @@ Realmeye
 Reddit
 ReverbNation
 RocketTube
-RuneScape
 Scribd
 SlideShare
 Splice
@@ -53,4 +53,3 @@ opennet
 phpRU
 social.tchncs.de
 svidbook
-xHamster
