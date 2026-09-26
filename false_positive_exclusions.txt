@@ -11,9 +11,11 @@ Championat
 Chatujme.cz
 ChaturBate
 Codolio
+Cracked Forum
 DeviantArt
 Discord.bio
 Envato Forum
+Flipboard
 GeeksforGeeks
 Giphy
 Hashnode
@@ -39,6 +41,8 @@ Spotify
 Trakt
 Trovo
 TryHackMe
+Valorant Forums
+Velomania
 Weblate
 YandexMusic
 authorSTREAM
@@ -52,4 +56,3 @@ opennet
 phpRU
 social.tchncs.de
 svidbook
-xHamster
