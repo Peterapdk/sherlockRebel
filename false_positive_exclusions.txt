@@ -15,7 +15,6 @@ Cracked Forum
 DeviantArt
 Discord.bio
 Envato Forum
-Flipboard
 GeeksforGeeks
 Giphy
 Hashnode
@@ -41,7 +40,6 @@ Spotify
 Trakt
 Trovo
 TryHackMe
-Valorant Forums
 Velomania
 Weblate
 YandexMusic
@@ -56,3 +54,4 @@ opennet
 phpRU
 social.tchncs.de
 svidbook
+xHamster
