@@ -1,6 +1,5 @@
 7Cups
 Airliners
-Anilist
 Apple Developer
 Apple Discussions
 Archive.org
@@ -36,7 +35,6 @@ Scribd
 SlideShare
 Splice
 Spotify
-Strava
 Trakt
 Trovo
 TryHackMe
