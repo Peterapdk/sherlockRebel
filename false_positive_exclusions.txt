@@ -5,7 +5,6 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-Blogger
 CGTrader
 Championat
 Chatujme.cz
@@ -16,9 +15,7 @@ Envato Forum
 GaiaOnline
 GeeksforGeeks
 Giphy
-GitBook
 HackerNews
-HackerRank
 Hashnode
 Houzz
 Hubski
@@ -26,10 +23,10 @@ Instapaper
 LinkedIn
 Linktree
 LushStories
-Minecraft
 ObservableHQ
 Odysee
 PCGamer
+Rajce.net
 Rarible
 Realmeye
 Reddit
@@ -40,7 +37,6 @@ SlideShare
 Splice
 Spotify
 Trakt
-Trovo
 TryHackMe
 Velomania
 Weblate
