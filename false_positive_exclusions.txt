@@ -5,11 +5,13 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-Blogger
+Blipfoto
 CGTrader
 Championat
 Chatujme.cz
+ChaturBate
 Codolio
+DEV Community
 DeviantArt
 Discord.bio
 Envato Forum
@@ -27,6 +29,7 @@ LushStories
 ObservableHQ
 Odysee
 PCGamer
+Pornhub
 Rarible
 Realmeye
 Reddit
@@ -36,14 +39,15 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 TryHackMe
 Velomania
 Weblate
-Wordnik
 YandexMusic
 authorSTREAM
 dailykos
 fixya
+furaffinity
 hunting
 interpals
 mercadolivre
