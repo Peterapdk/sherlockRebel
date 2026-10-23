@@ -23,11 +23,10 @@ Hubski
 Instapaper
 LinkedIn
 Linktree
-LushStories
-NationStates Nation
-NationStates Region
+Minecraft
 ObservableHQ
 Odysee
+OurDJTalk
 PCGamer
 Rarible
 Realmeye
