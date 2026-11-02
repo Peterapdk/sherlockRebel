@@ -5,7 +5,7 @@ Apple Discussions
 Archive.org
 ArtStation
 Bandcamp
-Carbonmade
+Blogger
 Championat
 Chatujme.cz
 ChaturBate
@@ -27,7 +27,6 @@ LushStories
 ObservableHQ
 Odysee
 PCGamer
-Rarible
 Realmeye
 Reddit
 ReverbNation
@@ -36,7 +35,9 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 TryHackMe
+Velomania
 Vero
 YandexMusic
 authorSTREAM
