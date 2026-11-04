@@ -1,14 +1,12 @@
-APClips
 Airliners
 Apple Developer
+Apple Discussions
 Archive.org
 Championat
 Chatujme.cz
 Codolio
 DeviantArt
 Discord.bio
-Dribbble
-Flipboard
 GaiaOnline
 GeeksforGeeks
 HackerNews
@@ -37,6 +35,7 @@ authorSTREAM
 dailykos
 fixya
 hunting
+igromania
 interpals
 mercadolivre
 opennet
