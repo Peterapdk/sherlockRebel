@@ -5,6 +5,7 @@ Apple Discussions
 Archive.org
 Championat
 Chatujme.cz
+Chess
 Codolio
 DeviantArt
 Discord.bio
@@ -19,7 +20,6 @@ LushStories
 ObservableHQ
 Odysee
 PCGamer
-Patched
 Pornhub
 Rarible
 Realmeye
@@ -30,6 +30,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 TryHackMe
 Velomania
 Vero
