@@ -3,24 +3,29 @@ Airliners
 Apple Developer
 Apple Discussions
 Archive.org
+Blogger
 Championat
 Chatujme.cz
 Codolio
+Cplusplus
 Cracked Forum
+DeviantArt
 Discord.bio
 GaiaOnline
 GeeksforGeeks
 HackerNews
 Hashnode
 Hubski
+Image Fap
 Instapaper
+Itch.io
 LinkedIn
+Linktree
 LushStories
 Minecraft
 ObservableHQ
 Odysee
 PCGamer
-Pornhub
 Rarible
 Realmeye
 Reddit
@@ -30,6 +35,7 @@ Scribd
 SlideShare
 Splice
 Spotify
+Trakt
 TryHackMe
 Velomania
 Vero
@@ -44,4 +50,3 @@ mercadolivre
 opennet
 phpRU
 social.tchncs.de
-xHamster
