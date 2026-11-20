@@ -8,17 +8,17 @@ Codolio
 Cracked Forum
 DeviantArt
 Discord.bio
+Eintracht Frankfurt Forum
 GaiaOnline
 GeeksforGeeks
 HackerNews
 Hashnode
 Hubski
 Instapaper
-Itch.io
-LibraryThing
 LinkedIn
 Linktree
 LushStories
+Minecraft
 ObservableHQ
 Odysee
 PCGamer
@@ -28,7 +28,6 @@ Reddit
 ReverbNation
 RocketTube
 Scribd
-Signal
 SlideShare
 Splice
 Spotify
